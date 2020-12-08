@@ -30,5 +30,14 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+        resolve: `gatsby-plugin-chatwoot`,
+        options: {
+            baseUrl: 'https://chatwoot-unknown.herokuapp.com', // Required
+            websiteToken: 'xUdb8mFy8HPSu1pXMFmKwSJ2', // Required
+            includeInDevelopment: false, // Optional
+            chatwootSettings: {} // Optional
+        },
+    }
   ],
 }
